@@ -1,24 +1,24 @@
-# Persian Gulf Historical API
+# 🌊 Persian Gulf Historical API 🌊
 
 <div dir="rtl">
 
-## خلیج فارس | Persian Gulf API
+## 🏛️ خلیج فارس | Persian Gulf API 🏛️
 
 این پروژه یک API برای ارائه اطلاعات تاریخی در مورد خلیج فارس است که با هدف نمایش مستندات و شواهد تاریخی مبنی بر اصالت نام "خلیج فارس" ایجاد شده است.
 
 </div>
 
-## Overview
+## 🔍 Overview
 
 This project provides a RESTful API for accessing historical documentation about the Persian Gulf, including historical maps, quotes from historians and travelers, and positions of international organizations on the name "Persian Gulf". The API aims to provide factual historical evidence about the longstanding use of the name "Persian Gulf".
 
 The project includes:
-- RESTful API endpoints for retrieving historical data
-- Administrative panel for managing content
-- Documentation page for API consumers
-- Authentication system for admin users
+- 🔄 RESTful API endpoints for retrieving historical data
+- 👑 Administrative panel for managing content
+- 📝 Documentation page for API consumers
+- 🔐 Authentication system for admin users
 
-## Table of Contents
+## 📋 Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
@@ -28,27 +28,27 @@ The project includes:
 - [Admin Access](#admin-access)
 - [Contributing](#contributing)
 
-## Features
+## ✨ Features
 
-- **Historical Maps API**: Access information about historical maps showing the Persian Gulf
-- **Historical Quotes API**: Access quotes from historians and travelers about the Persian Gulf
-- **Organizations' Positions API**: Access information about international organizations' official positions on the name "Persian Gulf"
-- **Admin Panel**: Secure administrative interface for managing content
-- **API Documentation**: Interactive documentation for API consumers
-- **Multilingual Support**: Interface that supports both English and Persian
+- 🗺️ **Historical Maps API**: Access information about historical maps showing the Persian Gulf
+- 💬 **Historical Quotes API**: Access quotes from historians and travelers about the Persian Gulf
+- 🏢 **Organizations' Positions API**: Access information about international organizations' official positions on the name "Persian Gulf"
+- 👑 **Admin Panel**: Secure administrative interface for managing content
+- 📚 **API Documentation**: Interactive documentation for API consumers
+- 🌐 **Multilingual Support**: Interface that supports both English and Persian
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Backend**: Flask (Python web framework)
-- **Database**: SQLite (SQLAlchemy ORM)
-- **Authentication**: Flask-Login
-- **Admin Panel**: Flask-Admin
-- **Frontend**: HTML, CSS, JavaScript
-- **Typography**: Vazir Font for Persian text support
-- **API**: RESTful JSON API
-- **CORS Support**: Cross-Origin Resource Sharing enabled
+- 🐍 **Backend**: Flask (Python web framework)
+- 💾 **Database**: SQLite (SQLAlchemy ORM)
+- 🔑 **Authentication**: Flask-Login
+- 👩‍💼 **Admin Panel**: Flask-Admin
+- 🖥️ **Frontend**: HTML, CSS, JavaScript
+- 🔤 **Typography**: Vazir Font for Persian text support
+- 🔄 **API**: RESTful JSON API
+- 🌍 **CORS Support**: Cross-Origin Resource Sharing enabled
 
-## Installation
+## 📥 Installation
 
 ### Prerequisites
 - Python 3.6+
