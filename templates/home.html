@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خلیج همبشه فارس</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/slider_style.css') }}">
+</head>
+<body>
+    <!-- منوی سایت -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">خلیج همیشه فارس</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="main-menu">
+                <li><a href="#" class="active">خانه</a></li>
+                <li><a href="{{ url_for('document') }}">مستندات api</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- محتوای اصلی -->
+    <div class="content">
+        <div class="slider-container">
+            <div class="slider">
+                {% for map in maps %}
+                <div class="slide {% if loop.first %}active{% endif %}">
+                    <img src="{{ map.image_url }}" alt="نقشه {{ map.title }}" class="slide-image">
+                    <h2>{{ map.year }}: {{ map.title }}</h2>
+                    <p>{{ map.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+    
+            <div class="slider-nav">
+                <button class="nav-button prev">&#10094;</button>
+                <button class="nav-button next">&#10095;</button>
+            </div>
+        </div>
+    
+        <div class="year-buttons">
+            {% for map in maps %}
+            <button class="year-button {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">{{ map.year }}</button>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='/js/slider.js') }}"></script>
+</body>
+</html>
